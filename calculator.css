@@ -1,0 +1,248 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #ebcbfe;
+}
+.darkM{
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+.lightM{
+    background-color: #E0AAFF;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+/* .mode{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background-color: #10002B;
+    display: flex;
+    position: absolute;
+    left:20px;
+    align-items: center;
+    justify-content: center;
+} */
+.modeswitchbtn{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    background-color: #10002B;
+    display: flex;
+    position: absolute;
+    left:20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 13px 0.4px #10002B;
+
+}
+.light{
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    /* visibility: hidden; */
+}
+.dark{
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    visibility: hidden;
+}
+.fa-sun{
+    filter: invert();
+    align-content: center;
+    font-size: 18px;
+    background-size: cover;
+}
+.fa-moon{
+    filter: invert();
+    align-content: center;
+    font-size: 18px;
+    background-size: cover;
+}
+.bodycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.maincontainer{
+    display:flex;
+    height:500px;
+    width:350px;
+    background-image: linear-gradient(#3C096C,#240046);
+    border-radius: 35px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px 1px #3C096C;
+}
+.mainscreen{
+    display: flex;
+    justify-content: center;
+    width:310px;
+    padding:4px;
+    background-color: #10002B;
+    height:80px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.input{
+    position:static;
+    left:526px;
+    margin:2px;
+    padding:4px;
+    width:300px;
+    height:27px;
+    font-size: 25px;
+    color: #c48ce5;
+    float: right;
+    overflow: hidden;
+    font-family: Gotham;
+    font-weight: bold;
+}
+.result{
+    position:static;
+    left:526px;
+    margin-right:5px;
+    margin-left:10px;
+    padding:4px;
+    width:300px;
+    height:40px;
+    font-size: 35px;
+    color: #ebc8ff;
+    align-self: flex-end;
+    overflow: hidden;
+    font-family: Gotham;
+    font-weight: bold;
+    text-align: right;
+}
+.keys{
+    margin-top: 13px;
+display: flex;
+   width:310px;
+    padding:4px;
+    height:348px;
+    top:45px;
+     align-self: center;
+    border-radius: 20px;
+   
+}
+.gridcontainer{
+    width:300px;
+    padding:4px;
+ display: grid;
+grid-template-areas: "FC SC ThC FrC";
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: center;
+align-items: center;
+justify-items: center;
+}
+.griditem{
+    background-color: #7B2CBF;
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    align-content: center;
+     box-shadow: 4px 0px 1px #10002B;
+     transition-duration: 0.2s;
+     transition-timing-function: ease-in-out;
+}
+.griditem:hover{
+    background-color: #953c01;
+}
+.keyvalues{
+    color:#E0AAFF;
+    font-family: Gotham;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+#allclear{
+    grid-area: FC;
+}
+#clear{
+    grid-area: SC;
+}
+#square{
+grid-area: ThC;
+}
+#divide{
+    grid-area: FrC;
+}
+
+#seven{
+    grid-area: FC;
+}
+#eight{
+    grid-area: SC;
+}
+#nine{
+    grid-area: ThC;
+}
+#multipy{
+    grid-area: FrC;
+}
+#four{
+    grid-area: FC;
+}
+ #five{
+    grid-area: SC;
+    }
+#six{
+    grid-area: ThC;
+
+    }
+    #subtract{
+        grid-area: FrC;
+    }
+    #one{
+        grid-area: FC;
+
+    }
+    #two{
+        grid-area: SC;
+
+    }
+    #three{
+        grid-area: ThC;
+    }
+    #add{
+        grid-area: FrC;
+    }
+#zero{
+    grid-area: FC;
+}
+#square{
+    grid-area: SC;
+}
+#changesign{
+    grid-area: ThC;
+}
+#equalsto{
+    grid-area: FrC;
+}
+.footer{
+    display: flex;
+    position: relative;
+    bottom: -80px;
+ background-color: #10002B;
+ height:15px;
+ width:100%;
+ justify-content: center;
+ align-items: center;
+}
+.footercontent{
+    color: #c48ce5;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 10px;
+
+}
+.footanchor{
+    text-decoration: none;
+    color: #c48ce5;
+}
